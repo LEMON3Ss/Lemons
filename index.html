@@ -4,37 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Autobiography</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
     }
 
     header {
-      background-color: #4f46e5;
+      background-color: #1d4ed8;
       color: white;
-      padding: 10px 20px;
       text-align: center;
+      padding: 20px 10px;
+      font-size: 1.8rem;
       font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     nav {
-      background-color: #e6e8fc;
-      padding: 10px 20px;
+      margin: 20px 0;
       text-align: center;
     }
 
     nav a {
-      margin: 0 10px;
-      color: #4f46e5;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: 500;
+      color: #1d4ed8;
+      font-weight: 600;
+      transition: color 0.3s;
     }
 
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      color: #1d4ed8;
+      font-weight: 600;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e0e7ff;
+      padding-bottom: 5px;
+    }
+
+    .section-content {
+      background-color: #f9fafb;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Autobiography</header>
+
+  <nav>
+    <a href="#intro">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+  </nav>
+
+  <div class="container">
+    <div class="profile-pic">
+      <img src="moonie.jpg" alt="My Picture" />
+    </div>
+
+    <h1 id="intro">Moonie Rey L. Leonen</h1>
+
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <div class="section-content">
+        Born on September 20, 2004, living in San Cristobal, Bangar, La Union. I’m currently a 3rd-year college student at ISPSC Tagudin Campus. I live a simple life like any other person.
+      </div>
+    </div>
+
+    <div class="section" id="hobbies">
+      <div class="section-title">My Hobbies</div>
+      <div class="section-content">
+        I enjoy gaming, exploring technology, outdoor activities, and reading.
+      </div>
+      <div class="section-content">
+        I was influenced by my uncles who loved gaming—I used to watch them play, and eventually, I got to play too. Thanks to modern technology, I can now enjoy games on my own device. I also explore various digital tools and devices that allow me to do more advanced things.
+      </div>
+      <div class="section-content">
+        As a balance to gaming, I read manga/comics and go outside for fresh air, do stretching, go for walks, and hang out with friends.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
     nav a:hover {
       text-decoration: underline;
     }
